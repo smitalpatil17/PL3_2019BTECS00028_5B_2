@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary To Decimal Conversion</title>
+</head>
+
+<body>
+    <header>
+        <h1>Program to converts binary number to decimal number</h1>
+    </header>
+    <hr />
+    <article>
+        <hr />
+
+        <section>
+            <h3>Code</h3>
+            <code>
+        <pre>
+            #include <iostream.h>
+                int main()
+                {
+                    int bin, dec=0, i=1, dig;
+                    cout &lt&lt "Enter any Binary Number: " ;
+                    cin &gt&gt bin;
+                    while(bin!=0)
+                    {
+                        dig = bin%10;
+                        dec = dec + (dig*i);
+                        i = i*2;
+                        bin = bin/10;
+                    }
+                    cout &lt&lt "\nEquivalent Decimal Value = " &lt&lt dec;
+                    return 0;
+                }      
+            </pre>
+        </code>
+        </section>
+        <hr />
+        <section>
+            <h4>Sample input</h4>
+            <kbd>Enter any Binary Number: 1100</kbd>
+            <h4>Sample output</h4>
+            <samp>Decimal equivalent for binary number 1100 is 12</samp>
+        </section>
+        <section>
+            <h4>Variables used in the program</h4>
+            <var>bin, </var> <var>dec, </var><var>i, </var>,</var><var>digit</var>
+        </section>
+        <section>
+            <h4>Complexity of code</h4>
+            <b>O(n)</b> <small>where n is number of digits in binary number</small>
+        </section>
+    </article>
+    <hr />
+    <footer>
+        <h4>
+            <a href="https://atechdaily.com/posts/algorithm-to-perform-binary-to-decimal-conversion"
+                target="_blank">Check the Algorithm to Convert Binary number to Decimal here</a>
+        </h4>
+    </footer>
+</body>
+
+</html>
